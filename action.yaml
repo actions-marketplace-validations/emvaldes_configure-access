@@ -44,9 +44,6 @@ runs:
       id: configure-access
       shell: bash
       run: |
-        echo "::add-mask::$AWS_ACCESS_KEY_ID" ;
-        echo "::add-mask::$AWS_SECRET_ACCESS_KEY" ;
-        echo "::add-mask::$AWS_SESSION_TOKEN" ;
         ####--------------------------------------------------------------------
         github_usercontent="https://raw.githubusercontent.com" ;
         usercontent_repository="${github_usercontent}/${{ inputs.repository--configure-access }}/master" ;
